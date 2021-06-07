@@ -10,7 +10,8 @@
 <form th:action="@{/processForm}" th:object="${book}" method="post">
     <label>Id:</label><input th:field="*{id}" type="number" required/><br>
     <label>Title:</label><input th:field="*{title}" type="text" required/><br>
-    <label>Cost:</label><input th:field="*{cost}" type="number" required/><br>
+    <label>Description:</label><input th:field="*{description}" type="text" required/><br>
+    <label>Year:</label><input th:field="*{year}" type="number" required/><br>
     <input type="submit" value="Submit" />
 </form>
 </body>
